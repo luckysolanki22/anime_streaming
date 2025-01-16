@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+}
+
+.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.details-left {
+    margin-right: 20px;
+}
+
+.anime-poster {
+    width: 200px;
+    height: auto;
+    border: 2px solid #f00;
+
+}
+
+.anime-title {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.anime-info {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #ffd700;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.anime-seasons,
+.anime-description,
+.anime-genres,
+.anime-cast {
+    margin-bottom: 20px;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+}
+
+.share span {
+    margin-right: 10px;
+}
+
+.share-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.details-footer {
+    background-color: #f00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.support-message {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.episode-list-container {
+    max-width: 75rem;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.episode-list-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.episode-list-header img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.episode-list-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.episode-list-header p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.episode-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.episode-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.episode-info {
+    display: flex;
+    align-items: center;
+}
+
+.episode-title {
+    font-size: 16px;
+    color: #fff;
+}
+
+.watch-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
+.watch-button:hover {
+    background-color: #888;
+    color: #ff0;
+}
+
+.watch-button.active {
+    background-color: #ff0;
+    color: #000;
+}
+/* CSS for the video player modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+   
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    border: #f00 solid 5px;
+}
+
+/* .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+/* .close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+} */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+
+.video-controls {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.video-controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-controls button:hover {
+    background-color: #666;
+}
+.video-container {
+    margin-top: 10px;
+}
+
+.video-controls {
+    margin-top: 5px;
+}
+
+.video-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-controls button:hover {
+    background-color: #ff6b4b;
+}

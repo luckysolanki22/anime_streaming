@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Manga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" alt="Anime Logo" >
+        </div>
+        <div class="logo-text">
+            <span class="anime">Anime</span>
+            <span class="thunder">⚡</span>
+            <span class="mania">Mania</span>
+
+        </div></a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#action-section">Action</a>
+            <a href="#adventure-section">Adventure</a>
+            <a href="#thriller-section">Thriller</a>
+            <!-- Login Button -->
+            <a href="newlogin.html" class="login-button">Log In</a>
+        </div> 
+        
+        <button class="hamburger" id="hamburger">
+            &#9776;
+        </button>
+    </nav>
+
+    <section class="carousel">
+        <button class="carousel-arrow left" onclick="scrollCarousel(-2)">&#9664;</button>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="resources/black clover.jpg" alt="Anime 1">
+                <div class="info">
+                    <p>Black Clover</p>
+                    <a href="anime-details.html?anime=black-clover"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/black.jpg" alt="Anime 2">
+                <div class="info">
+                    <p>Black Butler</p>
+                    <a href="anime-details.html?anime=wind"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/blue_lock.jpg" alt="Anime 2">
+                <div class="info">
+                    <p>Blue Lock</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/hunter.jpeg" alt="Anime 2">
+                <div class="info">
+                    <p>Hunter x HUnter</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/kaiju.jpeg" alt="Anime 2">
+                <div class="info">
+                    <p>Kaijuu no.8</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/mha.jpeg" alt="Anime 2">
+                <div class="info">
+                    <p>My Hero Academia</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/naruto.jpg" alt="Anime 2">
+                <div class="info">
+                    <p>Naruto shippuden</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/one_piece.jpg" alt="Anime 2">
+                <div class="info">
+                    <p>One Piece</p>
+                    <a href="anime-details.html?anime=blue-lock"><button class="carousel-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+        <button class="carousel-arrow right" onclick="scrollCarousel(1)">&#9654;</button>
+        <br>
+    </section>
+    <h2 class="section-heading">Featured Anime</h2>
+    <div class="anime-grid">
+        <div class="anime-card">
+            <img src="resources/black clover.jpg" alt="Anime 1">
+            <div class="anime-info">
+                <p>Black Clover</p>
+                <a href="anime-details.html?anime=black-clover"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/blue_lock.jpg" alt="Anime 2">
+            <div class="anime-info">
+                <p>Blue Lock</p>
+                <a href="anime-details.html?anime=blue-lock"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/hunter.jpeg" alt="Anime 3">
+            <div class="anime-info">
+                <p>Hunter x HUnter</p>
+                <a href="anime-details.html?anime=hunter-x-hunter"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/kaiju.jpeg" alt="Anime 4">
+            <div class="anime-info">
+                <p>Kaijuu no.8</p>
+                <a href="anime-details.html?anime=kaiju"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <!-- Repeat for more rows and columns as needed -->
+        <div class="anime-card">
+            <img src="resources/mha.jpeg" alt="Anime 5">
+            <div class="anime-info">
+                <p>My Hero Academia</p>
+                <a href="anime-details.html?anime=mha"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/naruto.jpg" alt="Anime 6">
+            <div class="anime-info">
+                <p>Naruto shippuden</p>
+                <a href="anime-details.html?anime=naruto"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/one_piece.jpg" alt="Anime 7">
+            <div class="anime-info">
+                <p>One Piece</p>
+                <a href="anime-details.html?anime=one-piece"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="resources/wind.jpeg" alt="Anime 8">
+            <div class="anime-info">
+                <p>Wind Breaker</p>
+                <a href="anime-details.html?anime=wind"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <button class="view-all-btn view-all">View All</button>
+    </div>
+    <h2 class="section-heading" id="action-section">Action</h2>
+    <div class="animerowbg">
+        <div class="anime-row">
+            <div class="anime-card row-card">
+                <img src="resources/kaiju.jpeg" alt="Action Anime 1">
+                <div class="anime-info">
+                    <p>Kaijuu no.8</p>
+                    <a href="anime-details.html?anime=kaiju"><button class="grid-watch-btn">Watch</button></a>
+                </div>
+            </div>
+            <div class="anime-card row-card">
+                <img src="resources/mha.jpeg" alt="Action Anime 2">
+                <div class="anime-info">
+                    <p>My Hero Academia</p>
+                    <a href="anime-details.html?anime=mha"><button class="grid-watch-btn">Watch</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-heading" id="adventure-section">Adventure</h2>
+    <div class="anime-row">
+        <div class="anime-card row-card">
+            <img src="resources/black clover.jpg" alt="Adventure Anime 1">
+            <div class="anime-info">
+                <p>Black Clover</p>
+                <a href="anime-details.html?anime=black-clover"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card row-card">
+            <img src="resources/hunter.jpeg" alt="Adventure Anime 2">
+            <div class="anime-info">
+                <p>Hunter x HUnter</p>
+                <a href="anime-details.html?anime=hunter-x-hunter"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-heading" id="thriller-section">Thriller</h2>
+    <div class="anime-row">
+        <div class="anime-card row-card">
+            <img src="resources/naruto.jpg" alt="Thriller Anime 1">
+            <div class="anime-info">
+                <p>Naruto shippuden</p>
+                <a href="anime-details.html?anime=naruto"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+        <div class="anime-card row-card">
+            <img src="resources/wind.jpeg" alt="Thriller Anime 2">
+            <div class="anime-info">
+                <p>Wind Breaker</p>
+                <a href="anime-details.html?anime=wind"><button class="grid-watch-btn">Watch</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We bring you the latest and greatest in anime and manga. Stay tuned for more updates and new releases.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#action-section">Action</a></li>
+                    <li><a href="#adventure-section">Adventure</a></li>
+                    <li><a href="#thriller-section">Thriller</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a a href="#">example.com</a></li>
+                    <li>Phone:+1234567890 </li>
+                </ul>
+                <div class="socials">
+                    <a href="#"><img src="resources/instalogo.jpeg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Anime Manga | Designed by Lucky Solanki
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

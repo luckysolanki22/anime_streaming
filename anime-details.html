@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anime-details.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link"><img src="resources/logo.png" alt="Anime Logo" >
+        </div>
+        <div class="logo-text">
+            <span class="anime">Anime</span>
+            <span class="thunder">⚡</span>
+            <span class="mania">Mania</span>
+
+        </div></a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#action-section">Action</a>
+            <a href="#adventure-section">Adventure</a>
+            <a href="#thriller-section">Thriller</a>
+            <!-- Login Button -->
+            <a href="newlogin.html" class="login-button">Log In</a>
+        </div> 
+        
+        <button class="hamburger" id="hamburger">
+            &#9776;
+        </button>
+    </nav>
+    <div class="details-container">
+        <div class="details-content">
+            <div class="details-left">
+                <img src="resources/black clover.jpg" alt="Anime Poster" class="anime-poster" id="anime-poster">
+            </div>
+            <div class="details-right">
+                <h1 id="anime-title" class="anime-title">Black Clover</h1>
+                <p id="anime-info" class="anime-info">2019 &bull; 24m &bull; <span class="rating">8.696</span></p>
+                <div id="tags" class="tags">
+                    <span class="tag">Action</span>
+                    <span class="tag">Anime</span>
+                    <span class="tag">Crunchyroll</span>
+                    <span class="tag">Fantasy</span>
+                    <span class="tag">Hindi Dub</span>
+                    <span class="tag">Historical</span>
+                    <span class="tag">Shounen</span>
+                    <span class="tag">Tamil</span>
+                    <span class="tag">Telugu</span>
+                </div>
+                <p id="anime-seasons" class="anime-seasons">01 Seasons - 2  Episodes</p>
+                <p id="anime-description" class="anime-description">Set in a world where everyone is given the ability to use magic, the story follows Asta, a young boy born without any magic power who is given a rare grimoire that grants him anti-magic abilities. With his fellow mages from the Black Bulls, Asta plans to become the next Wizard King..</p>
+                <p id="anime-genres" class="anime-genres"><strong>Genres:</strong> Action, Anime, Crunchyroll, Fantasy, Hindi Dub, Historical, Shounen, Tamil, Telugu</p>
+                <p id="anime-cast" class="anime-cast"><strong>Cast:</strong> Akari Kito, Hiro Shimono, Kana Hanazawa, Kengo Kawanishi, Natsuki Hanae</p>
+                <div class="share">
+                    <span>Share</span>
+                    <a href="#"><img aria-hidden="true" alt="share" src="https://placehold.co/20x20" class="share-icon"></a>
+                    <a href="#"><img aria-hidden="true" alt="share" src="https://placehold.co/20x20" class="share-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="details-footer">
+            <p class="support-message"><strong>Season 1 is Not Officially Dubbed In Hindi-Tamil-Telugu</strong></p>
+            <p class="support-message">Watch Season 1 Hindi Subtitled on HindiSubAnime</p>
+            <p class="support-message">Watch Season 1 on AniWave (English Dub/Sub) or Crunchyroll</p>
+            <p class="support-message">Please Do Support Crunchyroll if Possible, They Will Bring More Anime in Hindi Dub.</p>
+            <p class="support-message">Support Crunchyroll – Only 79 Per Month (14 Day Free Trial)</p>
+        </div>
+    </div>
+    <div class="episode-list-container" id="episode-list-container" >
+        <div class="episode-list-header">
+            <img src="https://placehold.co/80x80" alt="Season Thumbnail" />
+            <div>
+                <h1>Season 1</h1>
+                <p>02 Episodes</p>
+            </div>
+        </div>    
+        <div class="episode-item">
+            <div class="episode-info">
+                <img src="https://placehold.co/50x50" alt="Episode Thumbnail" />
+                <div class="episode-title">S1-E1 | Trailer</div>
+            </div>
+            <button class="watch-button" onclick="openModal(0)">Watch</button>
+        </div>
+        <div class="episode-item">
+            <div class="episode-info">
+                <img src="https://placehold.co/50x50" alt="Episode Thumbnail" />
+                <div class="episode-title">S1-E2 | Episode 1</div>
+            </div>
+            <!-- 'video/episodes/_Blue_Lock_-_01.mp4' -->
+            <button class="watch-button" onclick="openModal(1)">Watch</button>
+        </div>
+    </div>
+         
+    <!-- End of Episodes List Section -->
+
+    <!-- Video Player Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <video id="animeVideo" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button id="playPauseBtn">Play/Pause</button>
+                <button id="rewindBtn">-30s</button>
+                <button id="forwardBtn">+30s</button>
+            </div>
+        </div>
+    </div> 
+    <!-- End of Video Player Modal -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We bring you the latest and greatest in anime and manga. Stay tuned for more updates and new releases.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#action-section">Action</a></li>
+                    <li><a href="#adventure-section">Adventure</a></li>
+                    <li><a href="#thriller-section">Thriller</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a a href="#">example.com</a></li>
+                    <li>Phone:+1234567890 </li>
+                </ul>
+                <div class="socials">
+                    <a href="#"><img src="resources/instalogo.jpeg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <!-- <video src="video/episodes/_Blue_Lock_-_01.mp4" type="video/mp4" controls></video>
+        <div class="footer-bottom"> -->
+            &copy; 2024 Anime Manga | Designed by Lucky Solanki
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="videoLoader.js"></script> -->
+    
+</body>
+</html>
