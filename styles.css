@@ -256,6 +256,7 @@ body {
 .anime-card {
     background-color: #111;
     border: 2px solid #f00;
+    border-radius: 20px;
     padding: 10px;
     text-align: center;
     color: #fff;
@@ -316,10 +317,11 @@ body {
     margin-left: 280px;
 }
 .row-card {
-    display: flex;
+    
     align-items: center;
     background-color: #111;
     border: 2px solid #f00;
+    border-radius: 30px;
     padding: 10px;
     color: #fff;
     box-shadow: #000 0px 7px 29px 0px;
