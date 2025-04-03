@@ -30,6 +30,11 @@ body {
     transition: background-color 0.3s, opacity 0.3s;
     
 }
+.navbar{
+    margin-top: 4px;
+    border: 3px solid transparent; /* Transparent border to avoid layout shift */
+    box-shadow: 0 0 10px 3px rgba(248, 85, 4, 0.8); /* Adjust values for blur */
+}
 .navbar.transparent {
     background-color: rgba(51, 51, 51, 0.3);
 }
@@ -60,6 +65,12 @@ body {
     color: yellow;
     font-size: 24px; /* Adjust the font size as needed */
     margin: 0 5px; /* Adjust spacing between words and symbol */
+    transition: text-shadow 0.4s ease-in-out;
+}
+
+.logo-text .thunder:hover {
+    text-shadow: 0px 0px 10px #ffa200, 
+                 0px 0px 20px #c9e707;
 }
 
 .logo-text .mania {
@@ -146,8 +157,17 @@ body {
     height: 100%;
     object-fit: cover;
     border: 2px solid #f00;
+    border-radius: 20px;
     float: left;
+    transition: all 0.4s ease-in-out ;
 }
+
+.carousel-item img:hover {
+    transform: translateY(-40px) ;
+    box-shadow: 0 0 20px #e73007, 0 0 40px #ff4800;
+   
+}
+
 .carousel-item .info {
     width: 40%;
     height: 100%;
@@ -185,6 +205,7 @@ body {
     padding: 10px;
     cursor: pointer;
     z-index: 2;
+    box-shadow: 0 0 10px 3px rgba(4, 244, 248, 0.8);
 }
 .carousel-arrow.left {
     left: 10px;
@@ -251,6 +272,7 @@ body {
     width: 100%;
     height: auto;
     transition-property: all ease 0.4s;
+    border-radius: 20px;
 }
 .anime-info {
     margin-top: 10px;
@@ -263,6 +285,7 @@ body {
 }
 .grid-watch-btn,
 .view-all-btn {
+    border-radius: 20px;
     grid-column: 1 / -1;
     background-color: #f00;
     border: none;
@@ -284,10 +307,13 @@ body {
 .anime-row {
     background-image: url(/project2/resources/allanime.jpg);
     display: flex;
-    flex-direction: column;
+    
     gap: 20px;
     padding: 20px;
     margin: 40px;
+}
+.anime1{
+    margin-left: 280px;
 }
 .row-card {
     display: flex;
@@ -389,6 +415,17 @@ body {
     .carousel-item .info {
         width: 50%;
     }
+
+    .carousel-item:nth-child(1) { transform: rotateY(0deg) translateZ(350px); }
+.carousel-item:nth-child(2) { transform: rotateY(45deg) translateZ(350px); }
+.carousel-item:nth-child(3) { transform: rotateY(90deg) translateZ(350px); }
+.carousel-item:nth-child(4) { transform: rotateY(135deg) translateZ(350px); }
+.carousel-item:nth-child(5) { transform: rotateY(180deg) translateZ(350px); }
+.carousel-item:nth-child(6) { transform: rotateY(225deg) translateZ(350px); }
+.carousel-item:nth-child(7) { transform: rotateY(270deg) translateZ(350px); }
+.carousel-item:nth-child(8) { transform: rotateY(315deg) translateZ(350px); }
+
+}
 }
 @media (max-width: 768px) {
     /* .navbar {
@@ -420,7 +457,7 @@ body {
         width: 100%;
     }
     .carousel-item {
-        width: 250px;
+        width: 200px;
         height: 150px;
     }
     .carousel-item img {
